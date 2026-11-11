@@ -25,12 +25,12 @@ jobs:
         dotnet-quality: 'ga'
 
     - name: Install GitVersion
-      uses: gittools/actions/gitversion/setup@v3.1.11
+      uses: gittools/actions/gitversion/setup@v4.7.0
       with:
         versionSpec: '6.0.x'
 
     - name: Determine Version
-      uses: gittools/actions/gitversion/execute@v3.1.11
+      uses: gittools/actions/gitversion/execute@v4.7.0
       with:
         useConfigFile: true
         updateAssemblyInfo: true
